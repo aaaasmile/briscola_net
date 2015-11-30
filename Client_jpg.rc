@@ -1,0 +1,470 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CLIENT_JPG_DIALOG DIALOGEX 0, 0, 367, 347
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Briscola_net"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Fine",IDOK,310,7,50,14,BS_FLAT
+    PUSHBUTTON      "Nuova Partita",IDC_NEWGAME,310,235,50,14,BS_FLAT
+    PUSHBUTTON      "Conta",IDC_CONTA_PT_PLAYER,310,300,50,14,BS_FLAT
+    PUSHBUTTON      "Briscola?",IDC_WHAT_BRISCOLA,310,275,50,14,BS_FLAT
+    PUSHBUTTON      "Rete...",IDC_BT_NETWORK,310,255,50,14,BS_FLAT
+    LTEXT           "",IDC_HTMLINTRO,42,71,227,157
+    LTEXT           "Static",IDC_ST_NAME_ME,236,320,65,8
+    LTEXT           "Static",IDC_ST_NAME_OPP,225,7,71,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,9,22
+ PRODUCTVERSION 1,0,9,19
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Jango Soft Etc\0"
+            VALUE "FileDescription", "La briscola con le carte piacentine \0"
+            VALUE "FileVersion", "1, 0, 9, 22\0"
+            VALUE "InternalName", "Client_jpg\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Briscola.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Briscola_Net\0"
+            VALUE "ProductVersion", "1, 0, 9, 19\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CLIENT_JPG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 333
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Inf&o über Client_jpg..."
+    IDP_SOCKETS_INIT_FAILED "Fehler beim Initialisieren der Windows-Sockets."
+    IDS_REG_PLAYERNAME      "PlayerName"
+    IDS_REG_TIMER           "Timer"
+    IDS_VERSIONREGKEY       "Version 2.0"
+    IDS_REG_AUTOTER         "AutoTermination"
+    IDS_REG_LEVEL           "Level"
+    IDS_REG_UNDECK          "undeck"
+    IDS_REG_IPREM_1         "iprem_1"
+    IDS_REG_IPREM_2         "iprem_2"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REG_IPREM_3         "iprem_3"
+    IDS_REG_IPREM_4         "iprem_4"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Austria) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEA)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN_AUSTRIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 230, 228
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Opzioni"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,61,207,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,119,207,50,14
+    LTEXT           "Nome  giocatore",IDC_STATIC,32,18,76,10
+    EDITTEXT        IDC_ED_PLAYNAME,32,29,121,15,ES_AUTOHSCROLL
+    LTEXT           "Velocità",IDC_STATIC,149,135,45,9
+    EDITTEXT        IDC_ED_TIMER,118,131,25,15,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY,7,7,6,6
+    GROUPBOX        "Livello",IDC_STATIC,7,103,100,82
+    CONTROL         "Dummy",IDC_RAD_L0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,22,118,75,13
+    CONTROL         "Principiante",IDC_RAD_L1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,22,135,74,13
+    CONTROL         "Advanced",IDC_RAD_L2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_GROUP,22,152,76,13
+    CONTROL         "Nightmare",IDC_RAD_L3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_GROUP,22,169,76,13
+    CONTROL         "Termina mano auto",IDC_CHK_AUTOTER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,118,116,99,11
+    CONTROL         "Scoperta",IDC_CHK_SCOPERTA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,32,50,120,10
+    GROUPBOX        "Grafica",IDC_STATIC,110,104,113,82
+    GROUPBOX        "Gioco",IDC_STATIC,25,7,142,93
+    LTEXT           "Mazzo",IDC_STATIC,32,64,116,9
+    COMBOBOX        IDC_CMB_MAZZO,31,77,125,58,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  34, 22, 198, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Informazioni su... Briscola_net"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Static",IDC_HTMLVIEW,2,2,194,196,SS_SUNKEN
+END
+
+IDD_CONVERSATION_DIALOG DIALOG DISCARDABLE  0, 0, 224, 231
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SENDMSG,16,117,199,63,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_CHAT,16,14,201,93,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | WS_VSCROLL
+END
+
+IDD_NETWORKGAME DIALOG DISCARDABLE  0, 0, 293, 199
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rete"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,236,7,50,14,BS_FLAT
+    PUSHBUTTON      "Annulla",IDCANCEL,236,24,50,14,BS_FLAT
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,
+                    17,168,77,14
+    LTEXT           "IP remoto",IDC_STATIC,17,154,68,11
+    PUSHBUTTON      "Collega",IDC_BT_CONNREMOTE,109,167,46,15,BS_FLAT
+    GROUPBOX        "Collegati al channel",IDC_STATIC,7,139,211,54
+    GROUPBOX        "Channel",IDC_STATIC,7,7,210,128
+    PUSHBUTTON      "Start",IDC_BT_STARTMAZZ,165,86,46,15,BS_FLAT
+    LISTBOX         IDC_LST_PLAYERS,14,33,141,72,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Stop",IDC_BT_BREAK,165,109,46,15,BS_FLAT
+    PUSHBUTTON      "Chat",IDC_BT_CHAT,165,16,46,15,BS_FLAT
+    LTEXT           "Giocatori collegati",IDC_STATIC,51,20,83,8
+    CONTROL         "Animate1",IDC_ANI_WAIT,"SysAnimate32",WS_TABSTOP,236,47,
+                    50,54
+    PUSHBUTTON      "Disconnetti",IDC_BT_LEAVENET,14,109,46,15,BS_FLAT
+    PUSHBUTTON      "Invita",IDC_BT_PLAYWITH,165,40,46,15,BS_FLAT
+END
+
+IDD_PLAYERNAME DIALOG DISCARDABLE  0, 0, 187, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Briscola_Net"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,68,74,50,14
+    EDITTEXT        IDC_ED_NEWNAME_PLAYER,7,32,173,16,ES_AUTOHSCROLL
+    LTEXT           "Inserisci il tuo nome",IDC_STATIC,7,17,173,9
+END
+
+IDD_CONTAYOURPOINTS DIALOG DISCARDABLE  0, 0, 187, 193
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Controlla le carte prese"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,172,50,14,BS_FLAT
+    PUSHBUTTON      "<",IDC_BT_UPCONTA,33,170,20,16,BS_FLAT
+    PUSHBUTTON      ">",IDC_BT_DOWNCONTA,59,170,20,16,BS_FLAT
+    LTEXT           "Static",IDC_ST_POINTS_CONTA,115,14,65,8
+    LTEXT           "Static",IDC_ST_NUMCARD_CONTA,115,31,65,8
+    PUSHBUTTON      "|<",IDC_BT_UPCONTA_0,7,170,20,16,BS_FLAT
+    PUSHBUTTON      ">|",IDC_BT_DOWNCONTA_F,85,170,20,16,BS_FLAT
+END
+
+IDD_STATISTICA DIALOG DISCARDABLE  0, 0, 241, 211
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,184,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,184,24,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_CONVERSATION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+
+    IDD_NETWORKGAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 286
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_PLAYERNAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_CONTAYOURPOINTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_STATISTICA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Client_jpg.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Client_jpg.ico"
+IDR_CONVERSATION        ICON    DISCARDABLE     "res\\comuni.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+ABOUT.HTM               HTML    DISCARDABLE     "res\\about.htm"
+OKUP.GIF                HTML    DISCARDABLE     "res\\okup.gif"
+OKDN.GIF                HTML    DISCARDABLE     "res\\okdn.gif"
+ASSI.GIF                HTML    DISCARDABLE     "res\\_assi_an.gif"
+INITIAL.HTM             HTML    DISCARDABLE     "res\\initial.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BLOCK               BITMAP  DISCARDABLE     "res\\contact.bmp"
+IDB_CHANGEFONT          BITMAP  DISCARDABLE     "res\\changefont.bmp"
+IDB_TOPRIGHT            BITMAP  DISCARDABLE     "res\\top_right.bmp"
+IDB_BOTTOMRIGHT         BITMAP  DISCARDABLE     "res\\bottom_right.bmp"
+IDB_TOPLEFT             BITMAP  DISCARDABLE     "res\\top_left.bmp"
+IDB_BOTTOMLEFT          BITMAP  DISCARDABLE     "res\\bottom_left.bmp"
+IDB_BIT_BACKGRD         BITMAP  DISCARDABLE     "res\\tmp\\back_gnd_3.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONVERSATIONMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "IDR_CONVERSATIONMENU"
+    BEGIN
+        MENUITEM "Block",                       ID_IDRCONVERSATIONMENU_BLOCK
+        MENUITEM "Change Font",                 ID_IDRCONVERSATIONMENU_CHANGEFONT
+
+    END
+END
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "Partita"
+    BEGIN
+        MENUITEM "Nuova",                       ID_PARTITA_NUOVA
+        MENUITEM SEPARATOR
+        MENUITEM "Statistica",                  ID_PARTITA_STATISTICA
+        MENUITEM "Abbandona segno",             ID_PARTITA_TRADENTER
+        MENUITEM SEPARATOR
+        MENUITEM "Esci",                        ID_PARTITA_ESCI
+    END
+    POPUP "Extra"
+    BEGIN
+        MENUITEM "Rete...",                     ID_EXTRA_RETE
+        MENUITEM SEPARATOR
+        MENUITEM "Opzioni...",                  ID_EXTRA_OPZIONI
+    END
+    POPUP "?"
+    BEGIN
+        MENUITEM "Informazioni su...",          ID_INFO_BRISCOLANET
+        MENUITEM "Argomenti della Guida",       ID_INFO_HELP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDR_ANIMATEWAIT         AVI     DISCARDABLE     "res\\animated_bast_5.avi"
+#endif    // German (Austria) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Client_jpg.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.deu\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

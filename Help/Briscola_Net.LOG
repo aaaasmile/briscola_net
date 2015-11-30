@@ -1,0 +1,18 @@
+Microsoft (R) Help Compiler
+HCRTF 4.03.0002
+Copyright (c) Microsoft Corp 1990 - 1995. All rights reserved.
+Briscola_net.hpj
+    HC3026: Warning: topic #12 of E:\Projects\check_out\AX_jpg_Client\Help\.\briscola_net.rtf : 
+	The Topic ID "cmd_nuovapartita" has already been defined in topic 11 in file E:\Projects\check_out\AX_jpg_Client\Help\.\briscola_net.rtf.
+    HC3025: Warning: topic #1 of E:\Projects\check_out\AX_jpg_Client\Help\.\briscola_net.rtf : 
+	Jump to undefined Topic ID: "cmd_fine".
+14	Topics
+17	Jumps
+6	Keywords
+0	Bitmaps
+
+
+Created E:\Projects\check_out\AX_jpg_Client\Help\Briscola_Net.HLP, 13,664 bytes
+Hall+Zeck compression decreased help file by 4,515 bytes.
+Compile time: 0 minutes, 0 seconds
+0 notes, 2 warnings

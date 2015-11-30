@@ -1,0 +1,126 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by Client_jpg.rc
+//
+#define IDC_MAZZOCOP                    3
+#define IDM_ABOUTBOX                    0x0010
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
+#define IDD_CLIENT_JPG_DIALOG           102
+#define IDP_SOCKETS_INIT_FAILED         103
+#define IDC_CARD1                       104
+#define IDS_REG_PLAYERNAME              104
+#define IDS_REG_TIMER                   105
+#define IDS_VERSIONREGKEY               106
+#define IDS_REG_AUTOTER                 107
+#define IDS_REG_LEVEL                   108
+#define IDS_REG_UNDECK                  109
+#define IDS_REG_IPREM_1                 110
+#define IDS_REG_IPREM_2                 111
+#define IDS_REG_IPREM_3                 112
+#define IDS_REG_IPREM_4                 113
+#define IDR_MAINFRAME                   128
+#define IDR_HINTDATA                    129
+#define IDR_HINTDATA1                   130
+#define IDD_OPTIONS                     131
+#define IDR_HINT_PREGH                  133
+#define IDC_HTMLVIEW                    134
+#define IDD_CONVERSATION_DIALOG         135
+#define IDR_CONVERSATION                137
+#define IDB_BLOCK                       138
+#define IDR_CONVERSATIONMENU            139
+#define IDB_CHANGEFONT                  140
+#define IDB_TOPRIGHT                    141
+#define IDB_BOTTOMRIGHT                 142
+#define IDB_TOPLEFT                     143
+#define IDB_BOTTOMLEFT                  144
+#define IDD_NETWORKGAME                 145
+#define IDR_ANIMATEWAIT                 146
+#define ID_DONOTHING                    147
+#define ID_STATIC_BACKGRD               148
+#define IDR_MENU1                       150
+#define IDB_BIT_BACKGRD                 153
+#define IDD_PLAYERNAME                  156
+#define IDD_CONTAYOURPOINTS             157
+#define IDD_STATISTICA                  163
+#define IDC_MYCARD1                     1000
+#define IDC_MYCARD2                     1001
+#define IDC_MYCARD3                     1002
+#define IDC_OPPONENT1                   1003
+#define IDC_OPPONENT2                   1004
+#define IDC_OPPONENT3                   1005
+#define IDC_CARTAINTAVOLA               1007
+#define IDC_PLAYEDSECOND                1008
+#define IDC_PLAYEDFIRST                 1009
+#define IDC_NEWGAME                     1010
+#define IDC_CONTA_PT_PLAYER             1011
+#define IDC_WHAT_BRISCOLA               1012
+#define IDC_ABOUT                       1013
+#define IDC_APPNAME                     1014
+#define IDC_HINTS                       1015
+#define IDC_BIGICON                     1016
+#define IDC_ED_PLAYNAME                 1017
+#define IDC_ED_TIMER                    1018
+#define IDC_OPTIONS                     1019
+#define IDC_RAD_L0                      1020
+#define IDC_BT_NETWORK                  1020
+#define IDC_RAD_L1                      1021
+#define IDC_RAD_L2                      1022
+#define IDC_RAD_L3                      1023
+#define IDC_CHK_AUTOTER                 1024
+#define IDC_PLAYERNAME                  1025
+#define IDC_MYCARD_TAKEN                1026
+#define IDC_OPPONENT_TAKEN              1027
+#define IDC_CHK_SCOPERTA                1028
+#define IDC_SENDMSG                     1029
+#define IDC_CHAT                        1030
+#define IDC_IPADDRESS1                  1032
+#define IDC_BT_CONNREMOTE               1033
+#define IDC_BT_STARTMAZZ                1034
+#define IDC_LST_PLAYERS                 1035
+#define IDC_BT_BREAK                    1036
+#define IDC_BT_CHAT                     1037
+#define IDC_ANI_WAIT                    1038
+#define IDC_BT_LEAVENET                 1039
+#define IDC_SPIN                        1040
+#define IDC_BT_PLAYWITH                 1040
+#define IDC_HTMLINTRO                   1041
+#define IDC_STATUS                      1042
+#define IDC_ST_NAME_ME                  1043
+#define IDC_ST_NAME_OPP                 1044
+#define IDC_ST_TIPOGIOCO                1045
+#define IDC_ST_ACHITOCCA                1046
+#define IDC_BT_TESTCARD1                1047
+#define IDC_BT_TESTCARD2                1048
+#define IDC_ED_NEWNAME_PLAYER           1048
+#define IDC_BT_TESTCARD3                1049
+#define IDC_ED_ACHITOCCA                1049
+#define IDC_AXJPGCARD_CONTA             1050
+#define IDC_BT_UPCONTA                  1051
+#define IDC_BT_DOWNCONTA                1052
+#define IDC_ST_NUMCARD_CONTA            1053
+#define IDC_ST_POINTS_CONTA             1054
+#define IDC_BT_UPCONTA_0                1055
+#define IDC_CMB_MAZZO                   1055
+#define IDC_BT_DOWNCONTA_F              1056
+#define ID_IDRCONVERSATIONMENU_BLOCK    32771
+#define ID_IDRCONVERSATIONMENU_CHANGEFONT 32772
+#define ID_PARTITA_NUOVA                32773
+#define ID_PARTITA_ESCI                 32774
+#define ID_EXTRA_RETE                   32775
+#define ID_EXTRA_OPZIONI                32776
+#define ID_PARTITA_TRADENTER            32777
+#define ID_INFO_BRISCOLANET             32778
+#define ID_INFO_HELP                    32779
+#define ID_PARTITA_STATISTICA           32780
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        164
+#define _APS_NEXT_COMMAND_VALUE         32781
+#define _APS_NEXT_CONTROL_VALUE         1056
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

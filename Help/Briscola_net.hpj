@@ -1,0 +1,21 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+COMPRESS=12 Hall Zeck
+ERRORLOG=Briscola_Net.LOG
+LCID=0x410 0x0 0x0 ; Italienisch (Italien)
+REPORT=Yes
+CONTENTS=main_index
+TITLE=BRISCOLA_NET  "Guida dell'applicazione"
+BMROOT=..
+BMROOT=.
+ROOT=..
+ROOT=.
+HLP=Briscola_Net.HLP
+
+[FILES]
+briscola_net.rtf
+
+[CONFIG]
+BrowseButtons()
+Next()

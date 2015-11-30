@@ -1,0 +1,62 @@
+<HTML>
+
+<HEAD>
+<BASE url="res://Briscola_net.exe/about.htm">
+<TITLE>Briscola_net About Page</TITLE>
+<META http-equiv="Page-Enter" content="blendTrans(Duration=1.0)">
+</HEAD>
+
+<STYLE>A:hover { color:#FF00C0 }</STYLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+	var okImages = new Array(2);
+	okImages[0]  = new Image();
+	okImages[1]  = new Image();
+	okImages[0].src = "okup.gif";
+	okImages[1].src = "okdn.gif";
+	function OnClickOK(bDown) {
+		okImage.src = okImages[bDown].src;	
+	}
+</SCRIPT>
+
+<BODY scroll=no link="#02B7B7" vlink="#02B7B7">
+
+<TABLE border="0" width="100%" cellspacing="0" cellpadding="0">
+
+<TR><TD width="15%" valign="top">
+<a target="newwin" href="http://digilander.iol.it/4colpiunbucosolo">
+<img src="assi.gif" border="0" alt="Piacentina's forever!" width="122" height="231">
+</a></TD>
+<TD width="85%" valign="top">
+<p align=right><FONT size=1><B>Briscola_net</b><br>
+Ver 1,0,9,20<BR>
+Supported by:<BR>
+<a target="newwin" href="http://digilander.iol.it/4colpiunbucosolo">the black art of playing Briscola</a><br>
+Written by <a target="newwin" href="http://digilander.iol.it/4colpiunbucosolo">Igor Sarzi Sartori </a>
+<br><A HREF="mailto:6colpiunbucosolo@gmx.net">6colpiunbucosolo@gmx.net</A>
+</FONT></TD>
+</TR>
+
+<TR>
+<TD width="100%" colspan="2"><br>
+<FONT size=1>Briscola_net è un programma free. Special thanks to Stas Khirman, Raz Galili and Matthew.
+Thanks to the Beta-Test-Team: Superbulu and San.
+
+</FONT>
+</TD>
+</TR>
+
+<TR>
+<TD colspan=2 align=right>
+<BR>
+<a onMouseDown="OnClickOK(1);"
+	onMouseUp="OnClickOK(0);" 
+	onMouseOut="OnClickOK(0);" href="app:ok">
+<img name="okImage" src="okup.gif" align="right" border="0" width="80"
+height="20"></a>
+</TD>
+</TR>
+
+</TABLE>
+</BODY>
+</HTML>
