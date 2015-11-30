@@ -1,0 +1,16 @@
+*.opensdf
+*.sdf
+*.obj
+*.sbr
+*.tlh
+*.bsc
+out_win32/Briscola_net.exe
+*.ilk
+*.tlog
+Debug/Client_jpg.pch
+Debug/vc110.idb
+*.tli
+Debug/Client_jpg.lastbuildstate
+*.pdb
+Debug/Client_jpg.res
+Debug/Client_jpg.log
