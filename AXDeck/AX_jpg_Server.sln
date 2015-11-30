@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AX_jpg_Server", "AX_jpg_Server.vcxproj", "{99EA8567-EAEC-4FC3-B496-6A0CCFCC36F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release MinSize|Win32 = Release MinSize|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99EA8567-EAEC-4FC3-B496-6A0CCFCC36F5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{99EA8567-EAEC-4FC3-B496-6A0CCFCC36F5}.Debug|Win32.Build.0 = Debug|Win32
+		{99EA8567-EAEC-4FC3-B496-6A0CCFCC36F5}.Release MinSize|Win32.ActiveCfg = Release MinSize|Win32
+		{99EA8567-EAEC-4FC3-B496-6A0CCFCC36F5}.Release MinSize|Win32.Build.0 = Release MinSize|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

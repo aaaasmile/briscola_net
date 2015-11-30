@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release MinSize|Win32">
+      <Configuration>Release MinSize</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>AtlProj</Keyword>
+    <ProjectGuid>{99EA8567-EAEC-4FC3-B496-6A0CCFCC36F5}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfAtl>Dynamic</UseOfAtl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">
+    <OutDir>.\ReleaseMinSize\</OutDir>
+    <IntDir>.\ReleaseMinSize\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MinSpace</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\ReleaseMinSize\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\ReleaseMinSize\AX_jpg_Server.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\ReleaseMinSize\</ObjectFileName>
+      <ProgramDataBaseFileName>.\ReleaseMinSize\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\ReleaseMinSize\AX_jpg_Server.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0410</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\ReleaseMinSize\AX_jpg_Server.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\ReleaseMinSize\AX_jpg_Server.dll</OutputFile>
+      <ImportLibrary>.\ReleaseMinSize\AX_jpg_Server.lib</ImportLibrary>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\AX_jpg_Server.def</ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\AX_jpg_Server.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Debug\AX_jpg_Server.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0410</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\AX_jpg_Server.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\AX_jpg_Server.dll</OutputFile>
+      <ImportLibrary>.\Debug\AX_jpg_Server.lib</ImportLibrary>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\AX_jpg_Server.def</ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>regsvr32 /s /c "$(TargetPath)" 
+echo regsvr32 exec. time &gt; "$(OutDir)regsvr32.trg" </Command>
+      <Message>Performing registration</Message>
+      <Outputs>$(OutDir)\regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AX_jpg_Server.cpp" />
+    <ClCompile Include="AxJpgCard.cpp" />
+    <ClCompile Include="JpgLoader.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="AX_jpg_Server.def" />
+    <CustomBuild Include="AxJpgCard.rgs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="AX_jpg_Server.idl">
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">.\AX_jpg_Server.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">AX_jpg_Server.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">AX_jpg_Server_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">true</GenerateStublessProxies>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\AX_jpg_Server.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AX_jpg_Server.h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AX_jpg_Server_i.c</InterfaceIdentifierFileName>
+      <GenerateStublessProxies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateStublessProxies>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AX_jpg_Server.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release MinSize|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OUTDIR);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AX_jpg_ServerCP.h" />
+    <ClInclude Include="AxJpgCard.h" />
+    <ClInclude Include="JpgLoader.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\better_cards\1_bast_300.jpg" />
+    <Image Include="res\1_bastoni_300.jpg" />
+    <Image Include="res\1_coppe_300.jpg" />
+    <Image Include="res\better_cards\1_coppe_300.jpg" />
+    <Image Include="res\1_denari_300.jpg" />
+    <Image Include="res\better_cards\1_denari_300.jpg" />
+    <Image Include="res\1_spade_300.jpg" />
+    <Image Include="res\better_cards\1_spade_300.jpg" />
+    <Image Include="res\better_cards\2_bast_300.jpg" />
+    <Image Include="res\2_bastoni_300.jpg" />
+    <Image Include="res\2_coppe_300.jpg" />
+    <Image Include="res\better_cards\2_coppe_300.jpg" />
+    <Image Include="res\2_denari_300.jpg" />
+    <Image Include="res\better_cards\2_denari_300.jpg" />
+    <Image Include="res\2_spade_300.jpg" />
+    <Image Include="res\better_cards\2_spade_300.jpg" />
+    <Image Include="res\better_cards\3_bast_300.jpg" />
+    <Image Include="res\3_bastoni_300.jpg" />
+    <Image Include="res\3_coppe_300.jpg" />
+    <Image Include="res\better_cards\3_coppe_300.jpg" />
+    <Image Include="res\3_denari_300.jpg" />
+    <Image Include="res\better_cards\3_denari_300.jpg" />
+    <Image Include="res\3_spade_300.jpg" />
+    <Image Include="res\better_cards\3_spade_300.jpg" />
+    <Image Include="res\better_cards\4_bast_300.jpg" />
+    <Image Include="res\4_bastoni_300.jpg" />
+    <Image Include="res\4_coppe_300.jpg" />
+    <Image Include="res\better_cards\4_coppe_300.jpg" />
+    <Image Include="res\4_denari_300.jpg" />
+    <Image Include="res\better_cards\4_denari_300.jpg" />
+    <Image Include="res\4_spade_300.jpg" />
+    <Image Include="res\better_cards\4_spade_300.jpg" />
+    <Image Include="res\better_cards\5_bast_300.jpg" />
+    <Image Include="res\5_bastoni_300.jpg" />
+    <Image Include="res\5_coppe_300.jpg" />
+    <Image Include="res\better_cards\5_coppe_300.jpg" />
+    <Image Include="res\5_denari_300.jpg" />
+    <Image Include="res\better_cards\5_denari_300.jpg" />
+    <Image Include="res\5_spade_300.jpg" />
+    <Image Include="res\better_cards\5_spade_300.jpg" />
+    <Image Include="res\better_cards\6_bast_300.jpg" />
+    <Image Include="res\6_bastoni_300.jpg" />
+    <Image Include="res\6_coppe_300.jpg" />
+    <Image Include="res\better_cards\6_coppe_300.jpg" />
+    <Image Include="res\6_denari_300.jpg" />
+    <Image Include="res\better_cards\6_denari_300.jpg" />
+    <Image Include="res\6_spade_300.jpg" />
+    <Image Include="res\better_cards\6_spade_300.jpg" />
+    <Image Include="res\better_cards\7_bast_300.jpg" />
+    <Image Include="res\7_bastoni_300.jpg" />
+    <Image Include="res\7_coppe_300.jpg" />
+    <Image Include="res\better_cards\7_coppe_300.jpg" />
+    <Image Include="res\7_denari_300.jpg" />
+    <Image Include="res\better_cards\7_denari_300.jpg" />
+    <Image Include="res\7_spade_300.jpg" />
+    <Image Include="res\better_cards\7_spade_300.jpg" />
+    <Image Include="res\better_cards\cav_bast_300.jpg" />
+    <Image Include="res\cav_bastoni_300.jpg" />
+    <Image Include="res\better_cards\cav_coppe_300.jpg" />
+    <Image Include="res\cav_coppe_300.jpg" />
+    <Image Include="res\better_cards\cav_denari_300.jpg" />
+    <Image Include="res\cav_denari_300.jpg" />
+    <Image Include="res\better_cards\cav_spade_300.jpg" />
+    <Image Include="res\cav_spade_300.jpg" />
+    <Image Include="res\dorso_300.jpg" />
+    <Image Include="res\dorso_red_300.jpg" />
+    <Image Include="res\better_cards\fante_bast_300.jpg" />
+    <Image Include="res\fante_bastoni_300.jpg" />
+    <Image Include="res\better_cards\fante_coppe_300.jpg" />
+    <Image Include="res\fante_coppe_300.jpg" />
+    <Image Include="res\better_cards\fante_denari_300.jpg" />
+    <Image Include="res\fante_denari_300.jpg" />
+    <Image Include="res\better_cards\fante_spade_300.jpg" />
+    <Image Include="res\fante_spade_300.jpg" />
+    <Image Include="res\better_cards\re_bast_300.jpg" />
+    <Image Include="res\re_bastoni_300.jpg" />
+    <Image Include="res\better_cards\re_coppe_300.jpg" />
+    <Image Include="res\re_coppe_300.jpg" />
+    <Image Include="res\better_cards\re_denari_300.jpg" />
+    <Image Include="res\re_denari_300.jpg" />
+    <Image Include="res\better_cards\re_spade_300.jpg" />
+    <Image Include="res\re_spade_300.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

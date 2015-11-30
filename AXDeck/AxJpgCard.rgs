@@ -1,0 +1,46 @@
+HKCR
+{
+	AX_jpg_Server.AxJpgCard.1 = s 'AxJpgCard Class'
+	{
+		CLSID = s '{25763CCE-4C53-11D5-A31D-00A0CC77E79C}'
+		'Insertable'
+	}
+	AX_jpg_Server.AxJpgCard = s 'AxJpgCard Class'
+	{
+		CLSID = s '{25763CCE-4C53-11D5-A31D-00A0CC77E79C}'
+		CurVer = s 'AX_jpg_Server.AxJpgCard.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {25763CCE-4C53-11D5-A31D-00A0CC77E79C} = s 'AxJpgCard Class'
+		{
+			ProgID = s 'AX_jpg_Server.AxJpgCard.1'
+			VersionIndependentProgID = s 'AX_jpg_Server.AxJpgCard'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'Insertable'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{25763CC1-4C53-11D5-A31D-00A0CC77E79C}'
+			'Version' = s '1.0'
+			'Implemented Categories'
+			{
+				{B3C0DA05-7C56-40c9-9524-9E2F286B1B7D}
+			}
+		}
+	}
+	NoRemove 'Component Categories'
+	{
+		ForceRemove {B3C0DA05-7C56-40c9-9524-9E2F286B1B7D}
+		{
+			val 300 = s 'Mazzi di Carte'
+		}
+	}
+}

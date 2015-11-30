@@ -14,3 +14,12 @@ Debug/Client_jpg.lastbuildstate
 *.pdb
 Debug/Client_jpg.res
 Debug/Client_jpg.log
+*.ncb
+*.plg
+AXDeck/AX_jpg_Server.opt
+*.pch
+AXDeck/Debug/AX_jpg_Server.log
+AXDeck/Debug/AX_jpg_Server.lib
+AXDeck/Debug/AX_jpg_Server.exp
+*.idb
+*.ipch

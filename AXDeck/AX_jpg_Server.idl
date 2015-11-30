@@ -1,0 +1,115 @@
+// AX_jpg_Server.idl : IDL source for AX_jpg_Server.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (AX_jpg_Server.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+	
+	
+
+	
+
+[
+	uuid(25763CC1-4C53-11D5-A31D-00A0CC77E79C),
+	version(1.0),
+	helpstring("AX_jpg_Server 1.0 Type Library")
+]
+library AX_JPG_SERVERLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	typedef [v1_enum, public] enum tagCARDSHOWSTATUS 
+	{
+		[ helpstring("first when the card is displayed")]                
+							   CSW_ST_DRAWFIRST,      // status 0
+		[ helpstring("the control performs animation (works?)")]                
+							   CSW_ST_ANIMATETOBLACK, // 1
+		[ helpstring("rotate the image on 90 degrees")]                
+							   CSW_ST_ROTATE90,       // 2
+		[ helpstring("restore the image to old staus")]                
+							   CSW_ST_RESTORE,        // 3
+		[ helpstring("draw the image as default")]                
+							   CSW_ST_DRAWNORMAL,     // 4
+		[ helpstring("draw only border")]                
+							   CSW_ST_EMPTY,          // 5
+		[ helpstring("draw nothing")]                
+							   CSW_ST_INVISIBLE,      // 6
+		[ helpstring("draw control as deck")]                
+							   CSW_ST_MAZZO,          // 7
+		[ helpstring("draw control as selected 1")]                
+							   CSW_ST_SELECTED1,          // 8
+		[ helpstring("draw control as selected 2")]                
+							   CSW_ST_SELECTED2,          // 9
+		
+	} CARDSHOWSTATUS;
+	typedef CARDSHOWSTATUS* LP_CARDSHOWSTATUS;
+
+	[
+		object,
+		uuid(25763CCD-4C53-11D5-A31D-00A0CC77E79C),
+		dual,
+		helpstring("IAxJpgCard Interface"),
+		pointer_default(unique)
+	]
+	interface IAxJpgCard : IDispatch
+	{
+		[propput, id(DISPID_BACKCOLOR)]
+		HRESULT BackColor([in]OLE_COLOR clr);
+		[propget, id(DISPID_BACKCOLOR)]
+		HRESULT BackColor([out,retval]OLE_COLOR* pclr);
+		[propget, id(1), helpstring("property CardIndex")] HRESULT CardIndex([out, retval] long *pVal);
+		[propput, id(1), helpstring("property CardIndex")] HRESULT CardIndex([in] long newVal);
+		[propget, id(2), helpstring("property CardStatus")] HRESULT CardStatus([out, retval] LP_CARDSHOWSTATUS pVal);
+		[propput, id(2), helpstring("property CardStatus")] HRESULT CardStatus([in] LP_CARDSHOWSTATUS pVal);
+		[propget, id(3), helpstring("property NumCardOnDeck")] HRESULT NumCardOnDeck([out, retval] long *pVal);
+		[propput, id(3), helpstring("property NumCardOnDeck")] HRESULT NumCardOnDeck([in] long newVal);
+		[propget, id(4), helpstring("property deck name")] HRESULT DeckName([out, retval] BSTR *pVal);
+		[propget, id(5), helpstring("property card image size Y")] HRESULT SizeImageY([out, retval] long *pVal);
+		[propput, id(5), helpstring("property card image size Y")] HRESULT SizeImageY([in] long newVal);
+		[propget, id(6), helpstring("property card image size X")] HRESULT SizeImageX([out, retval] long *pVal);
+		[propput, id(6), helpstring("property card image size X")] HRESULT SizeImageX([in] long newVal);
+		
+	};
+
+	
+	[
+		uuid(25763CCF-4C53-11D5-A31D-00A0CC77E79C),
+		helpstring("_IAxJpgCardEvents Interface")
+	]
+	dispinterface _IAxJpgCardEvents
+	{
+		properties:
+		methods:
+			[id(1), helpstring("method LMouseClick")] HRESULT  LMouseClick();
+			[id(2), helpstring("method RMouseClick")] HRESULT RMouseClick();
+	};
+	
+	// virtual table source interface
+	[
+		object,
+		uuid(32FBD850-4F57-11d5-A3F9-0004760ECF99),
+		dual,
+		helpstring("_IAxJpgCardEventsVtbl Interface")
+	]
+	interface _IAxJpgCardEventsVtbl : IDispatch
+	{
+		[id(1), helpstring("method LMouseClick")] HRESULT  LMouseClick();
+		[id(2), helpstring("method RMouseClick")] HRESULT RMouseClick();
+	};
+
+	// com server Active X object
+	[
+		uuid(25763CCE-4C53-11D5-A31D-00A0CC77E79C),
+		helpstring("AxJpgCard Class")
+	]
+	coclass AxJpgCard
+	{
+		[default] interface IAxJpgCard;
+		[default, source] dispinterface _IAxJpgCardEvents;
+		[source] interface _IAxJpgCardEventsVtbl;
+	};
+};

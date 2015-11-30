@@ -1,0 +1,183 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""AX_jpg_Server.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,8
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "AX_jpg_Server Module\0"
+            VALUE "FileVersion", "1, 0, 0, 8\0"
+            VALUE "InternalName", "AX_jpg_Server\0"
+            VALUE "LegalCopyright", "Copyright 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OLESelfRegister", "\0"
+            VALUE "OriginalFilename", "AX_jpg_Server.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "AX_jpg_Server Module\0"
+            VALUE "ProductVersion", "1, 0, 0, 6\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_AXJPGCARD           BITMAP  DISCARDABLE     "axjpgcar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_AXJPGCARD           REGISTRY DISCARDABLE    "AxJpgCard.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// JPG
+//
+
+IDR_JPG00               JPG     DISCARDABLE     "res/dorso_300.jpg"
+IDR_JPG01               JPG     DISCARDABLE     "res/better_cards/1_bast_300.jpg"
+IDR_JPG02               JPG     DISCARDABLE     "res/better_cards/2_bast_300.jpg"
+IDR_JPG03               JPG     DISCARDABLE     "res/better_cards/3_bast_300.jpg"
+IDR_JPG04               JPG     DISCARDABLE     "res/better_cards/4_bast_300.jpg"
+IDR_JPG05               JPG     DISCARDABLE     "res/better_cards/5_bast_300.jpg"
+IDR_JPG06               JPG     DISCARDABLE     "res/better_cards/6_bast_300.jpg"
+IDR_JPG07               JPG     DISCARDABLE     "res/better_cards/7_bast_300.jpg"
+IDR_JPG08               JPG     DISCARDABLE     "res/better_cards/fante_bast_300.jpg"
+IDR_JPG09               JPG     DISCARDABLE     "res/better_cards/cav_bast_300.jpg"
+IDR_JPG10               JPG     DISCARDABLE     "res/better_cards/re_bast_300.jpg"
+IDR_JPG11               JPG     DISCARDABLE     "res/better_cards/1_denari_300.jpg"
+IDR_JPG12               JPG     DISCARDABLE     "res/better_cards/2_denari_300.jpg"
+IDR_JPG13               JPG     DISCARDABLE     "res/better_cards/3_denari_300.jpg"
+IDR_JPG14               JPG     DISCARDABLE     "res/better_cards/4_denari_300.jpg"
+IDR_JPG15               JPG     DISCARDABLE     "res/better_cards/5_denari_300.jpg"
+IDR_JPG16               JPG     DISCARDABLE     "res/better_cards/6_denari_300.jpg"
+IDR_JPG17               JPG     DISCARDABLE     "res/better_cards/7_denari_300.jpg"
+IDR_JPG18               JPG     DISCARDABLE     "res/better_cards/fante_denari_300.jpg"
+IDR_JPG19               JPG     DISCARDABLE     "res/better_cards/cav_denari_300.jpg"
+IDR_JPG20               JPG     DISCARDABLE     "res/better_cards/re_denari_300.jpg"
+IDR_JPG21               JPG     DISCARDABLE     "res/better_cards/1_spade_300.jpg"
+IDR_JPG22               JPG     DISCARDABLE     "res/better_cards/2_spade_300.jpg"
+IDR_JPG23               JPG     DISCARDABLE     "res/better_cards/3_spade_300.jpg"
+IDR_JPG24               JPG     DISCARDABLE     "res/better_cards/4_spade_300.jpg"
+IDR_JPG25               JPG     DISCARDABLE     "res/better_cards/5_spade_300.jpg"
+IDR_JPG26               JPG     DISCARDABLE     "res/better_cards/6_spade_300.jpg"
+IDR_JPG27               JPG     DISCARDABLE     "res/better_cards/7_spade_300.jpg"
+IDR_JPG28               JPG     DISCARDABLE     "res/better_cards/fante_spade_300.jpg"
+IDR_JPG29               JPG     DISCARDABLE     "res/better_cards/cav_spade_300.jpg"
+IDR_JPG30               JPG     DISCARDABLE     "res/better_cards/re_spade_300.jpg"
+IDR_JPG31               JPG     DISCARDABLE     "res/better_cards/1_coppe_300.jpg"
+IDR_JPG32               JPG     DISCARDABLE     "res/better_cards/2_coppe_300.jpg"
+IDR_JPG33               JPG     DISCARDABLE     "res/better_cards/3_coppe_300.jpg"
+IDR_JPG34               JPG     DISCARDABLE     "res/better_cards/4_coppe_300.jpg"
+IDR_JPG35               JPG     DISCARDABLE     "res/better_cards/5_coppe_300.jpg"
+IDR_JPG36               JPG     DISCARDABLE     "res/better_cards/6_coppe_300.jpg"
+IDR_JPG37               JPG     DISCARDABLE     "res/better_cards/7_coppe_300.jpg"
+IDR_JPG38               JPG     DISCARDABLE     "res/better_cards/fante_coppe_300.jpg"
+IDR_JPG39               JPG     DISCARDABLE     "res/better_cards/cav_coppe_300.jpg"
+IDR_JPG40               JPG     DISCARDABLE     "res/better_cards/re_coppe_300.jpg"
+IDR_JPG41               JPG     DISCARDABLE     "res/dorso_red_300.jpg"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "AX_jpg_Server"
+END
+
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "AX_jpg_Server.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

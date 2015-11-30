@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9a7d3969-1e8a-416e-b514-8aaf7f5c6418}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6dd09382-5f70-469e-a0f7-e4f2402ade61}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{7ab9e20d-1d1f-4e80-b3b7-2aee89d020ce}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AX_jpg_Server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AxJpgCard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JpgLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="AX_jpg_Server.idl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AX_jpg_Server.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AX_jpg_ServerCP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AxJpgCard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JpgLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\better_cards\1_bast_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\1_bastoni_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\1_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\1_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\1_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\1_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\1_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\1_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\2_bast_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\2_bastoni_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\2_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\2_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\2_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\2_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\2_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\2_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\3_bast_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\3_bastoni_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\3_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\3_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\3_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\3_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\3_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\3_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\4_bast_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\4_bastoni_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\4_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\4_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\4_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\4_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\4_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\4_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\5_bast_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\5_bastoni_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\5_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\5_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\5_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\5_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\5_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\5_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\6_bast_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\6_bastoni_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\6_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\6_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\6_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\6_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\6_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\6_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\7_bast_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\7_bastoni_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\7_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\7_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\7_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\7_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\7_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\7_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\cav_bast_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\cav_bastoni_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\cav_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\cav_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\cav_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\cav_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\cav_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\cav_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\dorso_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\dorso_red_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\fante_bast_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fante_bastoni_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\fante_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fante_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\fante_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fante_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\fante_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\fante_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\re_bast_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\re_bastoni_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\re_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\re_coppe_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\re_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\re_denari_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\better_cards\re_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\re_spade_300.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="AX_jpg_Server.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AxJpgCard.rgs">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

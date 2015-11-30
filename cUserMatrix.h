@@ -250,7 +250,7 @@ class cUserMatrix
     {
         std::ofstream out(fname);
         
-        if (out != NULL)
+        if (out)
         {
             out << m;
             out.close();
