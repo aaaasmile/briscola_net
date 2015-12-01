@@ -27,7 +27,7 @@
 #include <afxtempl.h>
 
 // deck com stuff
-#import "AX_jpg_Server.tlb" no_namespace named_guids
+#import "AXDeck/AX_jpg_Server.tlb" no_namespace named_guids
 #include <comcat.h>
 
 

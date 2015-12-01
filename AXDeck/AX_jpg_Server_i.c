@@ -6,7 +6,7 @@
 
 
  /* File created by MIDL compiler version 8.00.0603 */
-/* at Mon Nov 30 23:04:02 2015
+/* at Tue Dec 01 16:09:38 2015
  */
 /* Compiler settings for AX_jpg_Server.idl:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0603 

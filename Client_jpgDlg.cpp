@@ -101,7 +101,7 @@ void CClient_jpgDlg::DoDataExchange(CDataExchange* pDX)
 	//}}AFX_DATA_MAP
 	DDX_Control(pDX, IDC_ST_NAME_ME, m_lblNameMe);
 	DDX_Control(pDX, IDC_ST_NAME_OPP, m_lblNameOpp);
-	/*
+
 #ifndef _TEST_SOCKET
     DDX_Control(pDX, IDC_MYCARD1, m_AxMyCard1);
     DDX_Control(pDX, IDC_MYCARD2, m_AxMyCard2);
@@ -116,7 +116,6 @@ void CClient_jpgDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_CARTAINTAVOLA, m_AXintavola);
     DDX_Control(pDX, IDC_MAZZOCOP, m_AxMazzoDeck);
 #endif
-	*/
 }
 
 BEGIN_MESSAGE_MAP(CClient_jpgDlg, CBitmapDialog)
@@ -205,7 +204,7 @@ BOOL CClient_jpgDlg::OnInitDialog()
     m_lblNameMe.SetWindowText("");
 
                             // change the name if it wasn't
-    if ( g_GameSettings.sPlayerName.Compare("Anonimo") == 0)
+    /*if ( g_GameSettings.sPlayerName.Compare("Anonimo") == 0)
     {
         InsertName_Dlg dlg;
         dlg.m_strPlayerName = g_GameSettings.sPlayerName;
@@ -213,7 +212,7 @@ BOOL CClient_jpgDlg::OnInitDialog()
         {
             g_GameSettings.sPlayerName = dlg.m_strPlayerName;
         }
-    }
+    }*/
 
                             // check cards decks
 	m_graEngine.SetParentWnd(this);

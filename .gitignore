@@ -23,3 +23,8 @@ AXDeck/Debug/AX_jpg_Server.lib
 AXDeck/Debug/AX_jpg_Server.exp
 *.idb
 *.ipch
+AXDeck/Debug/AX_jpg_Server.Build.CppClean.log
+Client_jpg.aps
+Debug/Briscola_net.Build.CppClean.log
+*.suo
+Client_jpg.v12.suo

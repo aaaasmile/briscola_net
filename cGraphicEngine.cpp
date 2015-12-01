@@ -103,7 +103,7 @@ BOOL cGraphicEngine::Init()
     showSplash();
     DestroySplash();
 	checkCardsDecks();
-	createAllCards();
+	//createAllCards();
 
 	return TRUE;
 }
